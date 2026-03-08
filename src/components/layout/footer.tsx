@@ -6,6 +6,7 @@ const linkGroups = [
     title: "Product",
     links: [
       { label: "How It Works", href: "/how-it-works" },
+      { label: "Blog", href: "/blog" },
       { label: "Early Access", href: "/#waitlist" },
     ],
   },
