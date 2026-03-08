@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { CheckCircle2 } from "lucide-react";
+import { AlertCircle, CheckCircle2 } from "lucide-react";
 
 const roles = [
   "Freelancer",
@@ -37,6 +37,7 @@ const volumes = ["1–20", "20–100", "100–500", "500+"];
 export function WaitlistForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [role, setRole] = useState("");
@@ -47,19 +48,28 @@ export function WaitlistForm() {
     e.preventDefault();
     if (!role || !challenge || !volume) return;
     setLoading(true);
+    setError("");
 
     try {
-      await fetch("/api/waitlist", {
+      const res = await fetch("/api/waitlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, role, challenge, volume }),
       });
-    } catch {
-      // Show success state regardless — backend integration comes later
-    }
 
-    setSubmitted(true);
-    setLoading(false);
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        throw new Error(data?.error || "Something went wrong. Please try again.");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        err instanceof Error ? err.message : "Something went wrong. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -157,6 +167,13 @@ export function WaitlistForm() {
           </SelectContent>
         </Select>
       </div>
+
+      {error && (
+        <div className="flex items-center gap-2 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700">
+          <AlertCircle className="h-4 w-4 shrink-0" />
+          {error}
+        </div>
+      )}
 
       <Button
         type="submit"
