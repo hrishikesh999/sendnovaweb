@@ -119,7 +119,7 @@ export default function HomePage() {
       >
         <Container>
           <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-5xl font-semibold tracking-tight leading-[1.05] text-slate-900 md:text-6xl">
+            <h1 className="text-6xl font-bold tracking-tight leading-[1.05] text-slate-900 md:text-7xl">
               Fix the hardest part
               <br />
               of cold outreach
