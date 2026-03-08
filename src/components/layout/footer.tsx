@@ -2,6 +2,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/layout/container";
 
+const footerLinks = [
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Terms of Service", href: "/terms" },
+  { label: "Gmail Security", href: "/gmail-security" },
+  { label: "Data Usage", href: "/data-usage" },
+  { label: "Contact", href: "/contact" },
+  { label: "How It Works", href: "/how-it-works" },
+];
+
 export function Footer() {
   return (
     <footer className="border-t border-slate-100 bg-white py-16">
@@ -17,25 +26,16 @@ export function Footer() {
             />
           </Link>
 
-          <div className="flex flex-wrap justify-center gap-8">
-            <Link
-              href="/privacy"
-              className="text-sm text-slate-500 transition-colors hover:text-slate-900"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
-              className="text-sm text-slate-500 transition-colors hover:text-slate-900"
-            >
-              Terms
-            </Link>
-            <Link
-              href="/contact"
-              className="text-sm text-slate-500 transition-colors hover:text-slate-900"
-            >
-              Contact
-            </Link>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
+            {footerLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm text-slate-500 transition-colors hover:text-slate-900"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
 
           <div className="flex flex-col items-center gap-2 text-xs text-slate-500">

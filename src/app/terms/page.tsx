@@ -15,109 +15,189 @@ export default function TermsPage() {
           <h1 className="text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
             Terms of Service
           </h1>
-          <p className="mt-4 text-slate-500">Last updated: March 2026</p>
+          <p className="mt-4 text-slate-500">Last updated: March 8, 2026</p>
 
-          <div className="mt-14 space-y-12 text-lg leading-relaxed text-slate-800 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-slate-900">
+          <div className="mt-14 space-y-12 text-lg leading-relaxed text-slate-700 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-slate-900">
             <div>
-              <h2>Agreement to Terms</h2>
+              <h2>1. Introduction</h2>
+              <p className="mt-3">
+                These Terms of Service (&ldquo;Terms&rdquo;) govern your access
+                to and use of the SendNova website and application.
+              </p>
               <p className="mt-3">
                 By accessing or using SendNova, you agree to be bound by these
-                Terms of Service. If you do not agree to these terms, please do
-                not use the service.
+                Terms.
               </p>
-            </div>
-
-            <div>
-              <h2>Description of Service</h2>
               <p className="mt-3">
-                SendNova is a SaaS platform that helps professionals research
-                companies and generate personalized outbound emails. The service
-                is designed for professional, small-batch outreach and is not
-                intended for mass unsolicited email campaigns.
+                If you do not agree with these Terms, you should not use the
+                SendNova service.
               </p>
             </div>
 
             <div>
-              <h2>Acceptable Use</h2>
-              <p className="mt-3">You agree to use SendNova only for:</p>
+              <h2>2. About SendNova</h2>
+              <p className="mt-3">
+                SendNova is a software platform that helps users research
+                companies and generate contextual outreach emails based on
+                publicly available information.
+              </p>
+              <p className="mt-3">
+                SendNova is designed to support thoughtful, small-batch outreach,
+                not bulk unsolicited email campaigns.
+              </p>
+            </div>
+
+            <div>
+              <h2>3. User Accounts</h2>
+              <p className="mt-3">
+                To use SendNova, you may be required to create an account and
+                provide accurate information.
+              </p>
+              <p className="mt-3">You are responsible for:</p>
               <ul className="mt-3 list-disc space-y-2 pl-5">
-                <li>Professional and legitimate business outreach</li>
-                <li>Personalized, relevant communications</li>
                 <li>
-                  Purposes that comply with applicable laws and regulations
+                  maintaining the confidentiality of your account credentials
+                </li>
+                <li>all activity that occurs under your account</li>
+                <li>
+                  ensuring that your use of SendNova complies with applicable
+                  laws and regulations
                 </li>
               </ul>
-              <p className="mt-5">You agree not to use SendNova for:</p>
+            </div>
+
+            <div>
+              <h2>4. Gmail Integration</h2>
+              <p className="mt-3">
+                SendNova allows users to connect their Gmail account through
+                Google OAuth authentication.
+              </p>
+              <p className="mt-3">
+                This connection allows SendNova to send outreach emails on your
+                behalf using the Gmail permission:
+              </p>
+              <div className="mt-4 rounded-lg bg-slate-50 px-5 py-3">
+                <code className="text-sm text-slate-700">
+                  https://www.googleapis.com/auth/gmail.send
+                </code>
+              </div>
+              <p className="mt-4">
+                SendNova does not read inbox messages or access email history.
+              </p>
+              <p className="mt-3">
+                Users may revoke SendNova&apos;s access at any time through their
+                Google account settings.
+              </p>
+            </div>
+
+            <div>
+              <h2>5. Acceptable Use</h2>
+              <p className="mt-3">Users agree not to use SendNova to:</p>
               <ul className="mt-3 list-disc space-y-2 pl-5">
-                <li>Mass unsolicited email campaigns (spam)</li>
-                <li>Any illegal or unauthorized purpose</li>
+                <li>send spam or unsolicited bulk emails</li>
+                <li>distribute malware or malicious content</li>
+                <li>impersonate individuals or organizations</li>
                 <li>
-                  Sending content that is harmful, threatening, or abusive
+                  violate applicable email laws such as CAN-SPAM, GDPR, or other
+                  regulations
                 </li>
-                <li>
-                  Violating any applicable anti-spam laws (CAN-SPAM, GDPR, etc.)
-                </li>
+                <li>harass or abuse recipients</li>
               </ul>
-            </div>
-
-            <div>
-              <h2>Account Responsibilities</h2>
-              <p className="mt-3">
-                You are responsible for maintaining the security of your account
-                and for all activity that occurs under your account. You must
-                notify us immediately of any unauthorized use.
+              <p className="mt-4">
+                SendNova reserves the right to suspend or terminate accounts
+                engaged in abusive or unlawful activity.
               </p>
             </div>
 
             <div>
-              <h2>Gmail Integration</h2>
+              <h2>6. Responsible Outreach</h2>
               <p className="mt-3">
-                SendNova integrates with Gmail through Google&apos;s OAuth
-                system. By connecting your Gmail account, you authorize SendNova
-                to send emails on your behalf. SendNova does not read, access,
-                or store your inbox messages.
+                SendNova is designed for thoughtful outreach and
+                relationship-driven communication.
+              </p>
+              <p className="mt-3">
+                Users are responsible for ensuring their outreach practices
+                comply with applicable email laws and ethical communication
+                standards.
+              </p>
+              <p className="mt-3">
+                SendNova does not guarantee response rates, conversions, or
+                business outcomes.
               </p>
             </div>
 
             <div>
-              <h2>Limitation of Liability</h2>
+              <h2>7. Intellectual Property</h2>
               <p className="mt-3">
-                SendNova is provided &ldquo;as is&rdquo; without warranties of
-                any kind. We are not liable for any indirect, incidental, or
-                consequential damages arising from your use of the service.
+                The SendNova platform, including its software, branding, and
+                content, is the property of SendNova and is protected by
+                applicable intellectual property laws.
+              </p>
+              <p className="mt-3">
+                Users may not copy, reproduce, distribute, or reverse engineer
+                any part of the SendNova platform without permission.
               </p>
             </div>
 
             <div>
-              <h2>Termination</h2>
+              <h2>8. Service Availability</h2>
               <p className="mt-3">
-                We reserve the right to suspend or terminate your account if you
-                violate these terms. You may also terminate your account at any
-                time by contacting us.
+                SendNova is provided on an &ldquo;as-is&rdquo; and
+                &ldquo;as-available&rdquo; basis.
+              </p>
+              <p className="mt-3">
+                While we strive to maintain reliable service, SendNova does not
+                guarantee uninterrupted availability or error-free operation.
               </p>
             </div>
 
             <div>
-              <h2>Changes to Terms</h2>
+              <h2>9. Limitation of Liability</h2>
               <p className="mt-3">
-                We may update these terms from time to time. We will notify you
-                of significant changes. Continued use of SendNova after changes
-                constitutes acceptance of the updated terms.
+                To the fullest extent permitted by law, SendNova shall not be
+                liable for any indirect, incidental, or consequential damages
+                resulting from the use of the service.
+              </p>
+              <p className="mt-3">
+                Users assume full responsibility for the emails they send using
+                SendNova.
               </p>
             </div>
 
             <div>
-              <h2>Contact</h2>
+              <h2>10. Termination</h2>
               <p className="mt-3">
-                If you have questions about these terms, please contact us at{" "}
-                <a
-                  href="mailto:support@sendnova.co"
-                  className="text-primary underline underline-offset-4 hover:text-primary/80"
-                >
-                  support@sendnova.co
-                </a>
-                .
+                SendNova reserves the right to suspend or terminate access to the
+                service if users violate these Terms or engage in abusive or
+                unlawful activity.
               </p>
+              <p className="mt-3">
+                Users may stop using the service at any time.
+              </p>
+            </div>
+
+            <div>
+              <h2>11. Changes to These Terms</h2>
+              <p className="mt-3">
+                SendNova may update these Terms periodically.
+              </p>
+              <p className="mt-3">
+                Updated versions will be posted on this page with a revised
+                &ldquo;Last updated&rdquo; date.
+              </p>
+            </div>
+
+            <div>
+              <h2>12. Contact</h2>
+              <p className="mt-3">
+                If you have questions about these Terms, please contact:
+              </p>
+              <a
+                href="mailto:support@sendnova.ai"
+                className="mt-2 inline-block font-medium text-primary underline-offset-4 hover:underline"
+              >
+                support@sendnova.ai
+              </a>
             </div>
           </div>
         </div>
