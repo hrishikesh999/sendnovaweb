@@ -7,7 +7,7 @@ import { schemaTypes } from "./sanity/schemaTypes"
 export default defineConfig({
   name: "sendnova",
   title: "SendNova Blog",
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
+  projectId: "q5mc3mig",
   dataset: "production",
   basePath: "/studio",
   plugins: [structureTool()],

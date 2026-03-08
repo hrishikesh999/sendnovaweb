@@ -1,12 +1,8 @@
 import { createClient } from "next-sanity"
 
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
-
-export const client = projectId
-  ? createClient({
-      projectId,
-      dataset: "production",
-      apiVersion: "2024-01-01",
-      useCdn: true,
-    })
-  : null
+export const client = createClient({
+  projectId: "q5mc3mig",
+  dataset: "production",
+  apiVersion: "2024-01-01",
+  useCdn: true,
+})

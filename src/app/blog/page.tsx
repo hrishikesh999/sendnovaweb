@@ -25,7 +25,6 @@ interface Post {
 }
 
 async function getPosts(): Promise<Post[]> {
-  if (!client) return []
   return client.fetch(
     `*[_type == "post"] | order(publishedAt desc) {
       _id,

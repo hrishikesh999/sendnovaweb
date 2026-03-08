@@ -17,7 +17,6 @@ interface Post {
 }
 
 async function getPost(slug: string): Promise<Post | null> {
-  if (!client) return null
   return client.fetch(
     `*[_type == "post" && slug.current == $slug][0] {
       _id,
@@ -32,7 +31,6 @@ async function getPost(slug: string): Promise<Post | null> {
 }
 
 async function getAllSlugs(): Promise<string[]> {
-  if (!client) return []
   const slugs: { current: string }[] = await client.fetch(
     `*[_type == "post"].slug`
   )
