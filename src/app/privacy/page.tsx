@@ -179,10 +179,10 @@ export default function PrivacyPage() {
                 associated data by contacting:
               </p>
               <a
-                href="mailto:support@sendnova.ai"
+                href="mailto:support@sendnovahq.com"
                 className="mt-2 inline-block font-medium text-primary underline-offset-4 hover:underline"
               >
-                support@sendnova.ai
+                support@sendnovahq.com
               </a>
               <p className="mt-3">
                 Once processed, the user&apos;s account and associated data will
@@ -219,10 +219,10 @@ export default function PrivacyPage() {
                 If you have questions about this Privacy Policy, please contact:
               </p>
               <a
-                href="mailto:support@sendnova.ai"
+                href="mailto:support@sendnovahq.com"
                 className="mt-2 inline-block font-medium text-primary underline-offset-4 hover:underline"
               >
-                support@sendnova.ai
+                support@sendnovahq.com
               </a>
             </div>
 

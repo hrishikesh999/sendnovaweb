@@ -149,10 +149,10 @@ export default function DataUsagePage() {
               </ul>
               <p className="mt-4">To request deletion, contact:</p>
               <a
-                href="mailto:support@sendnova.ai"
+                href="mailto:support@sendnovahq.com"
                 className="mt-2 inline-block font-medium text-primary underline-offset-4 hover:underline"
               >
-                support@sendnova.ai
+                support@sendnovahq.com
               </a>
             </div>
 
@@ -175,10 +175,10 @@ export default function DataUsagePage() {
                 permissions, contact:
               </p>
               <a
-                href="mailto:support@sendnova.ai"
+                href="mailto:support@sendnovahq.com"
                 className="mt-2 inline-block font-medium text-primary underline-offset-4 hover:underline"
               >
-                support@sendnova.ai
+                support@sendnovahq.com
               </a>
             </div>
           </div>

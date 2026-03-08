@@ -23,7 +23,7 @@ const linkGroups = [
     title: "Support",
     links: [
       { label: "Contact", href: "/contact" },
-      { label: "support@sendnova.ai", href: "mailto:support@sendnova.ai" },
+      { label: "support@sendnovahq.com", href: "mailto:support@sendnovahq.com" },
     ],
   },
 ];

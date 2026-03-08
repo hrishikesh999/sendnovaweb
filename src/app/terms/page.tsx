@@ -193,10 +193,10 @@ export default function TermsPage() {
                 If you have questions about these Terms, please contact:
               </p>
               <a
-                href="mailto:support@sendnova.ai"
+                href="mailto:support@sendnovahq.com"
                 className="mt-2 inline-block font-medium text-primary underline-offset-4 hover:underline"
               >
-                support@sendnova.ai
+                support@sendnovahq.com
               </a>
             </div>
           </div>
