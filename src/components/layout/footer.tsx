@@ -30,13 +30,6 @@ const linkGroups = [
 export function Footer() {
   return (
     <footer>
-      <div
-        className="h-24 md:h-32"
-        style={{
-          background:
-            "linear-gradient(to bottom, transparent, rgb(2,6,23))",
-        }}
-      />
       <div className="bg-slate-950">
       <Container>
         <div className="py-16 md:py-20">
