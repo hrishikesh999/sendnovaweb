@@ -5,6 +5,7 @@ interface SectionProps {
   className?: string;
   id?: string;
   background?: "white" | "gray";
+  style?: React.CSSProperties;
 }
 
 export function Section({
@@ -12,6 +13,7 @@ export function Section({
   className,
   id,
   background = "white",
+  style,
 }: SectionProps) {
   return (
     <section
@@ -21,6 +23,7 @@ export function Section({
         background === "gray" ? "bg-slate-50" : "bg-white",
         className
       )}
+      style={style}
     >
       {children}
     </section>
