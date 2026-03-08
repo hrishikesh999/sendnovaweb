@@ -26,7 +26,7 @@ interface Post {
 
 async function getPosts(): Promise<Post[]> {
   return client.fetch(
-    `*[_type == "post"] | order(publishedAt desc) {
+    `*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
       _id,
       title,
       slug,
