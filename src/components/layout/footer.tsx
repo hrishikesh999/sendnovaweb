@@ -29,7 +29,15 @@ const linkGroups = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-800 bg-slate-950">
+    <footer>
+      <div
+        className="h-24 md:h-32"
+        style={{
+          background:
+            "linear-gradient(to bottom, transparent, rgb(2,6,23))",
+        }}
+      />
+      <div className="bg-slate-950">
       <Container>
         <div className="py-16 md:py-20">
           <div className="grid gap-12 md:grid-cols-12 md:gap-8">
@@ -83,6 +91,7 @@ export function Footer() {
           <p>SendNova is not affiliated with or endorsed by Google.</p>
         </div>
       </Container>
+      </div>
     </footer>
   );
 }

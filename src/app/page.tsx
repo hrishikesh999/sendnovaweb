@@ -114,7 +114,7 @@ export default function HomePage() {
         className="pt-24 pb-20 md:pt-32 md:pb-24"
         style={{
           background:
-            "radial-gradient(circle at 50% 20%, rgba(59,130,246,0.12), rgba(255,255,255,0) 60%)",
+            "radial-gradient(circle at 50% 10%, rgba(59,130,246,0.15), rgba(255,255,255,0) 60%)",
         }}
       >
         <Container>
