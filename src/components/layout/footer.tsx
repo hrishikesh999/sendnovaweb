@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/layout/container";
 
 export function Footer() {
@@ -6,9 +7,14 @@ export function Footer() {
     <footer className="border-t border-slate-100 bg-white py-16">
       <Container>
         <div className="flex flex-col items-center gap-6">
-          <Link href="/" className="text-lg font-semibold tracking-tight">
-            <span className="text-primary">Send</span>
-            <span className="text-slate-900">Nova</span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/sendnova-logo-trimmed.png"
+              alt="SendNova"
+              width={253}
+              height={56}
+              className="h-6 w-auto"
+            />
           </Link>
 
           <div className="flex flex-wrap justify-center gap-8">

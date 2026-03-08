@@ -16,6 +16,9 @@ import {
   ShieldCheck,
   CheckCircle2,
   Lock,
+  XCircle,
+  Copy,
+  Zap,
 } from "lucide-react";
 
 const steps = [
@@ -82,6 +85,27 @@ const gmailPoints = [
   "Access can be revoked anytime from your Google account settings",
 ];
 
+const problems = [
+  {
+    icon: XCircle,
+    title: "Generic emails get ignored",
+    description:
+      "Without context, your outreach sounds like everyone else\u2019s. Recipients delete before reading.",
+  },
+  {
+    icon: Copy,
+    title: "Templates miss what matters",
+    description:
+      "Mail merge personalization isn\u2019t real personalization. People can tell the difference.",
+  },
+  {
+    icon: Zap,
+    title: "Most tools help you send, not understand",
+    description:
+      "Sending at scale doesn\u2019t matter if you don\u2019t know why you\u2019re reaching out.",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -123,81 +147,58 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Product mockup */}
-          <div className="mx-auto mt-20 max-w-3xl">
-            <div className="overflow-hidden rounded-xl bg-white shadow-[0_8px_60px_rgba(0,0,0,0.08)]">
-              <div className="flex items-center gap-2 border-b border-slate-100 bg-slate-50/80 px-5 py-3">
-                <div className="h-2.5 w-2.5 rounded-full bg-slate-200" />
-                <div className="h-2.5 w-2.5 rounded-full bg-slate-200" />
-                <div className="h-2.5 w-2.5 rounded-full bg-slate-200" />
-                <div className="ml-4 h-2.5 w-36 rounded-full bg-slate-100" />
-              </div>
-              <div className="grid gap-5 p-6 sm:grid-cols-2">
-                <div className="rounded-lg bg-slate-50 p-5">
-                  <div className="mb-4 flex items-center gap-2">
-                    <Search className="h-3.5 w-3.5 text-slate-400" />
-                    <span className="text-xs font-medium text-slate-500">
-                      Company Research
-                    </span>
-                  </div>
-                  <div className="space-y-2.5">
-                    <div className="h-2 w-3/4 rounded-full bg-slate-200/70" />
-                    <div className="h-2 w-full rounded-full bg-slate-200/70" />
-                    <div className="h-2 w-2/3 rounded-full bg-slate-200/70" />
-                    <div className="h-2 w-5/6 rounded-full bg-slate-200/70" />
-                  </div>
-                </div>
-                <div className="rounded-lg bg-slate-50 p-5">
-                  <div className="mb-4 flex items-center gap-2">
-                    <Send className="h-3.5 w-3.5 text-slate-400" />
-                    <span className="text-xs font-medium text-slate-500">
-                      Generated Email
-                    </span>
-                  </div>
-                  <div className="space-y-2.5">
-                    <div className="h-2 w-full rounded-full bg-primary/10" />
-                    <div className="h-2 w-5/6 rounded-full bg-primary/10" />
-                    <div className="h-2 w-4/5 rounded-full bg-primary/10" />
-                    <div className="h-2 w-2/3 rounded-full bg-primary/10" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* Product screenshot */}
+          <img
+            src="/images/campaign-detail.png"
+            alt="SendNova campaign workspace showing AI insights and generated outreach emails"
+            className="mx-auto mt-16 w-full max-w-[900px] rounded-xl border border-gray-200 shadow-2xl opacity-80 brightness-110"
+          />
         </Container>
       </Section>
 
       {/* ───── Problem ───── */}
-      <Section id="problem" background="gray">
+      <section id="problem" className="relative overflow-hidden bg-[#0B1730] py-24 md:py-28">
+        <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 h-[600px] w-[900px] rounded-full bg-blue-500/[0.07] blur-[120px]" />
         <Container>
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
-              Most cold outreach fails
-              <br />
-              before the first email
-            </h2>
-            <div className="mt-10 space-y-5 text-lg leading-relaxed text-slate-800">
-              <p>The real challenge isn&apos;t sending.</p>
-              <p>
-                It&apos;s knowing{" "}
-                <em className="not-italic font-medium text-slate-900">why</em>{" "}
-                to reach out in the first place.
-              </p>
-              <p>
-                Without context, emails sound generic.
+          <div className="relative">
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
+                Most cold outreach fails
                 <br />
-                And generic emails get ignored.
-              </p>
-              <p>
-                SendNova focuses on the step most tools skip:{" "}
-                <span className="font-medium text-slate-900">
-                  understanding the company before writing the message.
-                </span>
+                before the first email
+              </h2>
+              <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-400">
+                The real challenge isn&apos;t sending. It&apos;s knowing why to
+                reach out in the first place.
               </p>
             </div>
+
+            <div className="mt-14 grid gap-6 md:grid-cols-3">
+              {problems.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-xl border border-white/[0.06] bg-white/[0.04] p-7 backdrop-blur-sm"
+                >
+                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10">
+                    <item.icon className="h-5 w-5 text-blue-400" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-base leading-relaxed text-slate-400">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-14 text-center text-lg font-medium text-blue-300/80">
+              SendNova starts where most tools stop: understanding the company
+              first.
+            </p>
           </div>
         </Container>
-      </Section>
+      </section>
 
       {/* ───── How it Works ───── */}
       <Section id="how-it-works">
@@ -207,18 +208,18 @@ export default function HomePage() {
             {steps.map((item) => (
               <div
                 key={item.step}
-                className="relative rounded-xl bg-white p-8 shadow-[0_8px_40px_rgba(0,0,0,0.05)]"
+                className="relative rounded-xl border border-blue-100/60 bg-white p-8 shadow-[0_8px_40px_rgba(37,99,235,0.06)]"
               >
-                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50">
                   <item.icon className="h-5 w-5 text-primary" />
                 </div>
-                <div className="absolute right-8 top-8 flex h-7 w-7 items-center justify-center rounded-full bg-slate-100 text-xs font-semibold text-slate-400">
+                <div className="absolute right-8 top-8 flex h-7 w-7 items-center justify-center rounded-full bg-blue-50 text-xs font-semibold text-blue-400">
                   {item.step}
                 </div>
                 <h3 className="text-lg font-semibold text-slate-900">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-base leading-relaxed text-slate-800">
+                <p className="mt-2 text-base leading-relaxed text-slate-600">
                   {item.description}
                 </p>
               </div>
@@ -228,7 +229,7 @@ export default function HomePage() {
       </Section>
 
       {/* ───── Use Cases ───── */}
-      <Section id="use-cases" background="gray">
+      <Section id="use-cases" className="bg-[#F6F8FF]">
         <Container>
           <SectionHeading
             title="Built for thoughtful outreach"
@@ -238,15 +239,15 @@ export default function HomePage() {
             {useCases.map((item) => (
               <div
                 key={item.title}
-                className="rounded-xl bg-white p-8 shadow-[0_8px_40px_rgba(0,0,0,0.05)]"
+                className="rounded-xl border border-blue-100/50 bg-white p-8 shadow-[0_8px_40px_rgba(37,99,235,0.05)]"
               >
-                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50">
                   <item.icon className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold text-slate-900">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-base leading-relaxed text-slate-800">
+                <p className="mt-2 text-base leading-relaxed text-slate-600">
                   {item.description}
                 </p>
               </div>
@@ -263,9 +264,9 @@ export default function HomePage() {
             subtitle="SendNova connects to your Gmail account using Google's secure authorization system."
           />
           <div className="mx-auto max-w-2xl">
-            <div className="rounded-xl bg-white p-8 shadow-[0_8px_40px_rgba(0,0,0,0.05)] sm:p-10">
+            <div className="rounded-xl border border-blue-100/60 bg-white p-8 shadow-[0_8px_40px_rgba(37,99,235,0.06)] sm:p-10">
               <div className="mb-8 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50">
                   <Lock className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold text-slate-900">
@@ -275,8 +276,8 @@ export default function HomePage() {
               <ul className="space-y-5">
                 {gmailPoints.map((point) => (
                   <li key={point} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                    <span className="text-lg leading-relaxed text-slate-800">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue-500" />
+                    <span className="text-lg leading-relaxed text-slate-700">
                       {point}
                     </span>
                   </li>
@@ -288,17 +289,17 @@ export default function HomePage() {
       </Section>
 
       {/* ───── Responsible Outreach ───── */}
-      <Section background="gray">
+      <Section className="bg-[#F6F8FF]">
         <Container>
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
               Built for thoughtful outreach
             </h2>
-            <div className="mt-10 space-y-6 text-lg leading-relaxed text-slate-800">
+            <div className="mt-10 space-y-6 text-lg leading-relaxed text-slate-600">
               <p>
                 SendNova is designed for relevant, personalized outreach.
               </p>
-              <div className="flex flex-col items-center gap-1.5 py-1">
+              <div className="flex flex-col items-center gap-2 py-2">
                 <p className="font-medium text-slate-800">
                   Consulting introductions
                 </p>

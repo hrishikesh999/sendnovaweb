@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Container } from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
@@ -19,9 +20,15 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/80 backdrop-blur-lg">
       <Container>
         <nav className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-xl font-semibold tracking-tight">
-            <span className="text-primary">Send</span>
-            <span className="text-slate-900">Nova</span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/sendnova-logo-trimmed.png"
+              alt="SendNova"
+              width={253}
+              height={56}
+              priority
+              className="h-7 w-auto md:h-8"
+            />
           </Link>
 
           <div className="hidden items-center gap-8 md:flex">
