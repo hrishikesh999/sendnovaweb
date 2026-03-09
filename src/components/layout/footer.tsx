@@ -40,7 +40,7 @@ export function Footer() {
             <div className="md:col-span-5">
               <Link href="/" className="inline-block">
                 <Image
-                  src="/images/sendnova-logo-light.png"
+                  src="/sendnova-logo-light.png"
                   alt="SendNova"
                   width={150}
                   height={33}
