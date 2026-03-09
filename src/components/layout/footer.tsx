@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/layout/container";
 
 const linkGroups = [
@@ -37,11 +38,14 @@ export function Footer() {
           <div className="grid gap-12 md:grid-cols-12 md:gap-8">
             {/* Brand block */}
             <div className="md:col-span-5">
-              <Link
-                href="/"
-                className="text-lg font-semibold tracking-tight text-white"
-              >
-                sendnova
+              <Link href="/" className="inline-block">
+                <Image
+                  src="/images/sendnova-logo-light.png"
+                  alt="SendNova"
+                  width={150}
+                  height={33}
+                  className="h-7 w-auto"
+                />
               </Link>
               <p className="mt-4 text-sm leading-relaxed text-slate-300">
                 Thoughtful outreach starts with context.
