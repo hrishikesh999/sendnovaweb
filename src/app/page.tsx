@@ -32,7 +32,7 @@ const steps = [
   {
     step: "2",
     icon: Search,
-    title: "SendNova researches each one",
+    title: "Sendnova researches each one",
     description:
       "Each company is analyzed for relevant signals, products, and context.",
   },
@@ -78,10 +78,10 @@ const useCases = [
 ];
 
 const gmailPoints = [
-  "SendNova only requests permission to send emails on your behalf",
-  "SendNova does not read your inbox",
-  "SendNova does not access your email history",
-  "SendNova does not store your Gmail messages",
+  "Sendnova only requests permission to send emails on your behalf",
+  "Sendnova does not read your inbox",
+  "Sendnova does not access your email history",
+  "Sendnova does not store your Gmail messages",
   "Access can be revoked anytime from your Google account settings",
 ];
 
@@ -125,7 +125,7 @@ export default function HomePage() {
               of cold outreach
             </h1>
             <p className="mt-8 text-lg leading-relaxed text-slate-600 md:text-xl">
-              SendNova researches companies and generates thoughtful outbound
+              Sendnova researches companies and generates thoughtful outbound
               emails based on real observations — so you reach out with context,
               not templates.
             </p>
@@ -148,7 +148,7 @@ export default function HomePage() {
 
             <p className="mt-10 text-sm text-slate-500">
               <ShieldCheck className="mr-1.5 inline-block h-4 w-4 align-text-bottom text-slate-400" />
-              Works with Gmail. SendNova only requests permission to send emails
+              Works with Gmail. Sendnova only requests permission to send emails
               — never to read your inbox.
             </p>
           </div>
@@ -156,7 +156,7 @@ export default function HomePage() {
           {/* Product screenshot */}
           <img
             src="/images/campaign-detail.png"
-            alt="SendNova campaign workspace showing AI insights and generated outreach emails"
+            alt="Sendnova campaign workspace showing AI insights and generated outreach emails"
             className="mx-auto mt-16 w-full max-w-[900px] rounded-xl border border-gray-200 shadow-2xl brightness-110"
           />
         </Container>
@@ -199,7 +199,7 @@ export default function HomePage() {
             </div>
 
             <p className="mt-14 text-center text-lg font-medium text-blue-300/80">
-              SendNova starts where most tools stop: understanding the company
+              Sendnova starts where most tools stop: understanding the company
               first.
             </p>
           </div>
@@ -209,7 +209,7 @@ export default function HomePage() {
       {/* ───── How it Works ───── */}
       <Section id="how-it-works">
         <Container>
-          <SectionHeading title="How SendNova works" />
+          <SectionHeading title="How Sendnova works" />
           <div className="grid gap-8 md:grid-cols-3">
             {steps.map((item) => (
               <div
@@ -239,7 +239,7 @@ export default function HomePage() {
         <Container>
           <SectionHeading
             title="Built for thoughtful outreach"
-            subtitle="SendNova is designed for professionals who care about relevance and reputation."
+            subtitle="Sendnova is designed for professionals who care about relevance and reputation."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {useCases.map((item) => (
@@ -260,7 +260,7 @@ export default function HomePage() {
             ))}
           </div>
           <p className="mx-auto mt-12 max-w-2xl text-center text-lg leading-relaxed text-slate-600">
-            SendNova is not built for mass unsolicited email campaigns. It is
+            Sendnova is not built for mass unsolicited email campaigns. It is
             designed for relevant, personalized outreach to initiate consulting
             introductions, partnership exploration, recruiting conversations, and
             so much more.
@@ -272,8 +272,8 @@ export default function HomePage() {
       <Section id="gmail">
         <Container>
           <SectionHeading
-            title="How SendNova works with Gmail"
-            subtitle="SendNova connects to your Gmail account using Google's secure authorization system."
+            title="How Sendnova works with Gmail"
+            subtitle="Sendnova connects to your Gmail account using Google's secure authorization system."
           />
           <div className="mx-auto max-w-2xl">
             <div className="rounded-xl border border-blue-100/60 bg-white p-8 shadow-[0_8px_40px_rgba(37,99,235,0.06)] sm:p-10">
@@ -305,7 +305,7 @@ export default function HomePage() {
         <Container>
           <SectionHeading
             title="Join early access"
-            subtitle="SendNova is currently in private beta. Join the waitlist to get early access when the platform opens."
+            subtitle="Sendnova is currently in private beta. Join the waitlist to get early access when the platform opens."
           />
           <div className="mx-auto max-w-xl">
             <WaitlistForm />

@@ -10,13 +10,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SendNova — Thoughtful Cold Outreach, Powered by Research",
+  title: "Sendnova — Thoughtful Cold Outreach, Powered by Research",
   description:
-    "SendNova researches companies and generates personalized outbound emails based on real observations. Join the early access waitlist.",
+    "Sendnova researches companies and generates personalized outbound emails based on real observations. Join the early access waitlist.",
   openGraph: {
-    title: "SendNova — Thoughtful Cold Outreach, Powered by Research",
+    title: "Sendnova — Thoughtful Cold Outreach, Powered by Research",
     description:
-      "SendNova researches companies and generates personalized outbound emails based on real observations.",
+      "Sendnova researches companies and generates personalized outbound emails based on real observations.",
     type: "website",
   },
 };

@@ -3,8 +3,8 @@ import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — SendNova",
-  description: "SendNova privacy policy and data usage information.",
+  title: "Privacy Policy — Sendnova",
+  description: "Sendnova privacy policy and data usage information.",
 };
 
 export default function PrivacyPage() {
@@ -18,17 +18,17 @@ export default function PrivacyPage() {
           <p className="mt-4 text-slate-500">Last updated: March 8, 2026</p>
 
           <p className="mt-8 text-lg leading-relaxed text-slate-600">
-            SendNova (&ldquo;SendNova&rdquo;, &ldquo;we&rdquo;,
+            Sendnova (&ldquo;Sendnova&rdquo;, &ldquo;we&rdquo;,
             &ldquo;our&rdquo;, or &ldquo;us&rdquo;) respects your privacy and
             is committed to protecting your personal information.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-slate-600">
-            This Privacy Policy explains how SendNova collects, uses, and
-            protects information when you use the SendNova website and
+            This Privacy Policy explains how Sendnova collects, uses, and
+            protects information when you use the Sendnova website and
             application.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-slate-600">
-            SendNova is designed to help users send thoughtful, contextual
+            Sendnova is designed to help users send thoughtful, contextual
             outreach emails using insights gathered from publicly available
             company information.
           </p>
@@ -37,7 +37,7 @@ export default function PrivacyPage() {
             <div>
               <h2>Information We Collect</h2>
               <p className="mt-3">
-                SendNova may collect the following information when you use the
+                Sendnova may collect the following information when you use the
                 platform:
               </p>
               <p className="mt-4 font-medium text-slate-900">
@@ -52,7 +52,7 @@ export default function PrivacyPage() {
               </p>
               <ul className="mt-2 list-disc space-y-2 pl-5">
                 <li>Company domains you analyze</li>
-                <li>Outreach email content generated within SendNova</li>
+                <li>Outreach email content generated within Sendnova</li>
               </ul>
               <p className="mt-4 font-medium text-slate-900">
                 Usage information
@@ -63,7 +63,7 @@ export default function PrivacyPage() {
                 <li>Log data for security and debugging</li>
               </ul>
               <p className="mt-4">
-                SendNova only collects information necessary to operate the
+                Sendnova only collects information necessary to operate the
                 service.
               </p>
             </div>
@@ -71,12 +71,12 @@ export default function PrivacyPage() {
             <div>
               <h2>Google Account Information</h2>
               <p className="mt-3">
-                If you choose to connect your Gmail account to SendNova, the
+                If you choose to connect your Gmail account to Sendnova, the
                 application will request permission through Google OAuth
                 authentication.
               </p>
               <p className="mt-3">
-                SendNova uses the following Google permission scope:
+                Sendnova uses the following Google permission scope:
               </p>
               <div className="mt-4 rounded-lg bg-slate-50 px-5 py-3">
                 <code className="text-sm text-slate-700">
@@ -84,7 +84,7 @@ export default function PrivacyPage() {
                 </code>
               </div>
               <p className="mt-4">
-                This permission allows SendNova to send emails through your Gmail
+                This permission allows Sendnova to send emails through your Gmail
                 account on your behalf.
               </p>
             </div>
@@ -92,9 +92,9 @@ export default function PrivacyPage() {
             <div>
               <h2>Gmail Data Access</h2>
               <p className="mt-3">
-                SendNova does not access or read your Gmail inbox.
+                Sendnova does not access or read your Gmail inbox.
               </p>
-              <p className="mt-3">SendNova does not:</p>
+              <p className="mt-3">Sendnova does not:</p>
               <ul className="mt-3 list-disc space-y-2 pl-5">
                 <li>read email messages</li>
                 <li>access Gmail inbox content</li>
@@ -104,7 +104,7 @@ export default function PrivacyPage() {
                 <li>store Gmail message content</li>
               </ul>
               <p className="mt-4">
-                SendNova only uses Gmail to send outreach emails that you approve
+                Sendnova only uses Gmail to send outreach emails that you approve
                 within the application.
               </p>
             </div>
@@ -112,10 +112,10 @@ export default function PrivacyPage() {
             <div>
               <h2>How We Use Information</h2>
               <p className="mt-3">
-                SendNova uses collected information to:
+                Sendnova uses collected information to:
               </p>
               <ul className="mt-3 list-disc space-y-2 pl-5">
-                <li>operate and maintain the SendNova platform</li>
+                <li>operate and maintain the Sendnova platform</li>
                 <li>generate outreach emails</li>
                 <li>
                   send emails on behalf of users through Gmail (when authorized)
@@ -129,7 +129,7 @@ export default function PrivacyPage() {
             <div>
               <h2>Data Storage and Security</h2>
               <p className="mt-3">
-                SendNova uses industry-standard security measures to protect user
+                Sendnova uses industry-standard security measures to protect user
                 information.
               </p>
               <p className="mt-3">Security measures include:</p>
@@ -140,7 +140,7 @@ export default function PrivacyPage() {
                 <li>minimal data collection principles</li>
               </ul>
               <p className="mt-4">
-                SendNova only stores the information required to provide the
+                Sendnova only stores the information required to provide the
                 service.
               </p>
             </div>
@@ -148,22 +148,22 @@ export default function PrivacyPage() {
             <div>
               <h2>Data Sharing</h2>
               <p className="mt-3">
-                SendNova does not sell or rent user data.
+                Sendnova does not sell or rent user data.
               </p>
               <p className="mt-3">
-                SendNova may share limited information with trusted service
+                Sendnova may share limited information with trusted service
                 providers strictly for the purpose of operating the platform,
                 such as hosting infrastructure.
               </p>
               <p className="mt-3">
-                SendNova does not share Gmail data with third parties.
+                Sendnova does not share Gmail data with third parties.
               </p>
             </div>
 
             <div>
               <h2>Data Retention</h2>
               <p className="mt-3">
-                SendNova retains user data only as long as necessary to provide
+                Sendnova retains user data only as long as necessary to provide
                 the service.
               </p>
               <p className="mt-3">
@@ -175,7 +175,7 @@ export default function PrivacyPage() {
             <div>
               <h2>Data Deletion Requests</h2>
               <p className="mt-3">
-                Users may request deletion of their SendNova account and
+                Users may request deletion of their Sendnova account and
                 associated data by contacting:
               </p>
               <a
@@ -186,26 +186,26 @@ export default function PrivacyPage() {
               </a>
               <p className="mt-3">
                 Once processed, the user&apos;s account and associated data will
-                be permanently removed from SendNova systems.
+                be permanently removed from Sendnova systems.
               </p>
             </div>
 
             <div>
               <h2>Third-Party Services</h2>
               <p className="mt-3">
-                SendNova relies on trusted third-party infrastructure providers
+                Sendnova relies on trusted third-party infrastructure providers
                 for hosting and security services.
               </p>
               <p className="mt-3">
                 These providers process data only as necessary to operate the
-                SendNova platform.
+                Sendnova platform.
               </p>
             </div>
 
             <div>
               <h2>Changes to This Privacy Policy</h2>
               <p className="mt-3">
-                SendNova may update this Privacy Policy periodically to reflect
+                Sendnova may update this Privacy Policy periodically to reflect
                 changes to the service or legal requirements.
               </p>
               <p className="mt-3">
@@ -229,7 +229,7 @@ export default function PrivacyPage() {
             <div>
               <h2>Google API Services User Data Policy</h2>
               <p className="mt-3">
-                SendNova&apos;s use and transfer of information received from
+                Sendnova&apos;s use and transfer of information received from
                 Google APIs will adhere to the{" "}
                 <a
                   href="https://developers.google.com/terms/api-services-user-data-policy"

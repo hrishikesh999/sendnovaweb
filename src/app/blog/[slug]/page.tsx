@@ -54,10 +54,10 @@ export async function generateMetadata({
   if (!post) return {}
 
   return {
-    title: `${post.title} — SendNova Blog`,
+    title: `${post.title} — Sendnova Blog`,
     description: post.description,
     openGraph: {
-      title: `${post.title} — SendNova Blog`,
+      title: `${post.title} — Sendnova Blog`,
       description: post.description,
       type: "article",
       publishedTime: post.publishedAt,

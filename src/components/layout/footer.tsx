@@ -41,7 +41,7 @@ export function Footer() {
               <Link href="/" className="inline-block">
                 <Image
                   src="/sendnova-logo-light.png"
-                  alt="SendNova"
+                  alt="Sendnova"
                   width={150}
                   height={33}
                   className="h-7 w-auto"
@@ -86,7 +86,7 @@ export function Footer() {
           <p>
             &copy; {new Date().getFullYear()} sendnova. All rights reserved.
           </p>
-          <p>SendNova is not affiliated with or endorsed by Google.</p>
+          <p>Sendnova is not affiliated with or endorsed by Google.</p>
         </div>
       </Container>
       </div>
