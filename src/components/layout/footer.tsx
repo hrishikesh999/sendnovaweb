@@ -44,10 +44,10 @@ export function Footer() {
                   alt="Sendnova"
                   width={253}
                   height={56}
-                  className="h-7 w-auto md:h-8"
+                  className="h-8 w-auto md:h-10"
                 />
               </Link>
-              <p className="mt-4 text-sm leading-relaxed text-slate-300">
+              <p className="mt-5 text-sm leading-relaxed text-slate-300">
                 Thoughtful outreach starts with context.
               </p>
               <p className="mt-2 max-w-xs text-sm leading-relaxed text-slate-400">
