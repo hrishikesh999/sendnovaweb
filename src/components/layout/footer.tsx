@@ -44,7 +44,7 @@ export function Footer() {
                   alt="Sendnova"
                   width={253}
                   height={56}
-                  className="h-8 w-auto md:h-10"
+                  className="w-40 md:w-44 h-auto"
                 />
               </Link>
               <p className="mt-5 text-sm leading-relaxed text-slate-300">
