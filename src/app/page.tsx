@@ -19,6 +19,7 @@ import {
   XCircle,
   Copy,
   Zap,
+  TrendingUp,
 } from "lucide-react";
 
 const steps = [
@@ -50,30 +51,37 @@ const useCases = [
     icon: Briefcase,
     title: "Consultants",
     description:
-      "Reach potential clients with insights about their business challenges.",
+      "Reach potential clients with insights about their business, products, or growth signals instead of generic cold outreach.",
   },
   {
     icon: Megaphone,
     title: "Agencies",
     description:
-      "Introduce your services with relevant context instead of generic outreach.",
+      "Introduce your services with relevant context about a company\u2019s marketing, product launches, or hiring signals.",
   },
   {
     icon: Rocket,
-    title: "SaaS Founders",
+    title: "Startup Founders",
     description:
-      "Connect with companies using relevant tools or workflows.",
+      "Connect with companies that could become customers, partners, or early adopters using meaningful context about their product or market.",
   },
   {
     icon: Users,
     title: "Recruiters",
-    description: "Personalize outreach based on hiring signals.",
+    description:
+      "Personalize candidate outreach using signals like company growth, hiring activity, or team expansion.",
   },
   {
     icon: Handshake,
     title: "Partnership Teams",
     description:
-      "Identify companies with complementary audiences.",
+      "Identify companies with complementary products or audiences and start partnership conversations with relevant context.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Investors & Advisors",
+    description:
+      "Reach founders with context about their product, traction, or market instead of sending generic introductions.",
   },
 ];
 
@@ -237,10 +245,18 @@ export default function HomePage() {
       {/* ───── Use Cases ───── */}
       <Section id="use-cases" className="bg-[#F6F8FF]">
         <Container>
-          <SectionHeading
-            title="Built for thoughtful outreach"
-            subtitle="Sendnova is designed for professionals who care about relevance and reputation."
-          />
+          <div className="mx-auto mb-16 max-w-2xl text-center md:mb-20">
+            <p className="text-xs font-semibold uppercase tracking-widest text-blue-600">
+              Use Cases
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
+              Who Sendnova Is For
+            </h2>
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-slate-600 md:text-xl">
+              Small teams and founders who rely on thoughtful outreach instead of
+              high-volume automation.
+            </p>
+          </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {useCases.map((item) => (
               <div
@@ -259,12 +275,6 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <p className="mx-auto mt-12 max-w-2xl text-center text-lg leading-relaxed text-slate-600">
-            Sendnova is not built for mass unsolicited email campaigns. It is
-            designed for relevant, personalized outreach to initiate consulting
-            introductions, partnership exploration, recruiting conversations, and
-            so much more.
-          </p>
         </Container>
       </Section>
 
