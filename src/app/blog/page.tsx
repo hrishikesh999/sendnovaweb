@@ -4,6 +4,8 @@ import { client } from "../../../sanity/lib/client"
 import { Container } from "@/components/layout/container"
 import { Section } from "@/components/layout/section"
 
+export const revalidate = 60
+
 export const metadata: Metadata = {
   title: "Blog — SendNova",
   description:

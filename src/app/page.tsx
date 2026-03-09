@@ -157,7 +157,7 @@ export default function HomePage() {
           <img
             src="/images/campaign-detail.png"
             alt="SendNova campaign workspace showing AI insights and generated outreach emails"
-            className="mx-auto mt-16 w-full max-w-[900px] rounded-xl border border-gray-200 shadow-2xl opacity-80 brightness-110"
+            className="mx-auto mt-16 w-full max-w-[900px] rounded-xl border border-gray-200 shadow-2xl brightness-110"
           />
         </Container>
       </Section>
