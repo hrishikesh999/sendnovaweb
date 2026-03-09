@@ -42,9 +42,9 @@ export function Footer() {
                 <Image
                   src="/sendnova-logo-light.png"
                   alt="Sendnova"
-                  width={150}
-                  height={33}
-                  className="h-7 w-auto"
+                  width={253}
+                  height={56}
+                  className="h-7 w-auto md:h-8"
                 />
               </Link>
               <p className="mt-4 text-sm leading-relaxed text-slate-300">
