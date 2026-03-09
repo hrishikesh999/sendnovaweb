@@ -16,9 +16,6 @@ import {
   ShieldCheck,
   CheckCircle2,
   Lock,
-  XCircle,
-  Copy,
-  Zap,
   TrendingUp,
 } from "lucide-react";
 
@@ -95,22 +92,19 @@ const gmailPoints = [
 
 const problems = [
   {
-    icon: XCircle,
-    title: "Generic emails get ignored",
+    title: "Generic lists lead to generic outreach",
     description:
-      "Without context, your outreach sounds like everyone else\u2019s. Recipients delete before reading.",
+      "Most outreach begins with a list of companies or contacts. From there people try to add relevance afterward. The result often feels forced.",
   },
   {
-    icon: Copy,
-    title: "Templates miss what matters",
+    title: "Templates cannot replace a real reason to reach out",
     description:
-      "Mail merge personalization isn\u2019t real personalization. People can tell the difference.",
+      "If there is no meaningful signal behind the message, even well written emails feel random to the person receiving them.",
   },
   {
-    icon: Zap,
-    title: "Most tools help you send, not understand",
+    title: "Research takes too long",
     description:
-      "Sending at scale doesn\u2019t matter if you don\u2019t know why you\u2019re reaching out.",
+      "Finding useful context means opening websites, profiles, and articles. It is slow work, so many teams either rush it or skip it entirely.",
   },
 ];
 
@@ -176,40 +170,34 @@ export default function HomePage() {
         <Container>
           <div className="relative">
             <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
-                Most cold outreach fails
-                <br />
-                before the first email
+              <p className="text-xs font-semibold uppercase tracking-widest text-blue-400">
+                Problem
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-4xl">
+                Most cold outreach fails before the first email.
               </h2>
               <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-400">
-                The real challenge isn&apos;t sending. It&apos;s knowing why to
-                reach out in the first place.
+                The issue usually is not the wording. It is starting outreach
+                without enough context about why you are reaching out in the
+                first place.
               </p>
             </div>
 
-            <div className="mt-14 grid gap-6 md:grid-cols-3">
+            <div className="mt-16 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
               {problems.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-xl border border-white/[0.06] bg-white/[0.04] p-7 backdrop-blur-sm"
+                  className="rounded-xl border border-white/[0.06] bg-white/[0.03] p-8"
                 >
-                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10">
-                    <item.icon className="h-5 w-5 text-blue-400" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white">
+                  <h3 className="text-lg font-semibold leading-snug text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-base leading-relaxed text-slate-400">
+                  <p className="mt-3 text-base leading-relaxed text-slate-400">
                     {item.description}
                   </p>
                 </div>
               ))}
             </div>
-
-            <p className="mt-14 text-center text-lg font-medium text-blue-300/80">
-              Sendnova starts where most tools stop: understanding the company
-              first.
-            </p>
           </div>
         </Container>
       </section>
