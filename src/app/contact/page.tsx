@@ -4,8 +4,8 @@ import { Section } from "@/components/layout/section";
 import { Mail, Clock, HelpCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact — Sendnova",
-  description: "Get in touch with the Sendnova team.",
+  title: "Contact — SendNova",
+  description: "Get in touch with the SendNova team.",
 };
 
 export default function ContactPage() {
@@ -15,10 +15,10 @@ export default function ContactPage() {
         <div className="mx-auto max-w-2xl">
           <div className="text-center">
             <h1 className="text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
-              Contact Sendnova
+              Contact SendNova
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-slate-600">
-              If you have questions about Sendnova, Gmail permissions, privacy,
+              If you have questions about SendNova, Gmail permissions, privacy,
               or account support, reach out and we&apos;ll get back to you as
               soon as possible.
             </p>

@@ -7,11 +7,11 @@ import { Section } from "@/components/layout/section"
 export const revalidate = 60
 
 export const metadata: Metadata = {
-  title: "Blog — Sendnova",
+  title: "Blog — SendNova",
   description:
     "Thoughts on thoughtful outreach. Read articles about cold email, personalization, and building real connections.",
   openGraph: {
-    title: "Blog — Sendnova",
+    title: "Blog — SendNova",
     description:
       "Thoughts on thoughtful outreach. Read articles about cold email, personalization, and building real connections.",
     type: "website",

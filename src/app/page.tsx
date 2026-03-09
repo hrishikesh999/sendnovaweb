@@ -30,7 +30,7 @@ const steps = [
   {
     step: "2",
     icon: Search,
-    title: "Sendnova researches each one",
+    title: "SendNova researches each one",
     description:
       "Each company is analyzed for relevant signals, products, and context.",
   },
@@ -83,10 +83,10 @@ const useCases = [
 ];
 
 const gmailPoints = [
-  "Sendnova only requests permission to send emails on your behalf",
-  "Sendnova does not read your inbox",
-  "Sendnova does not access your email history",
-  "Sendnova does not store your Gmail messages",
+  "SendNova only requests permission to send emails on your behalf",
+  "SendNova does not read your inbox",
+  "SendNova does not access your email history",
+  "SendNova does not store your Gmail messages",
   "Access can be revoked anytime from your Google account settings",
 ];
 
@@ -127,7 +127,7 @@ export default function HomePage() {
               of cold outreach
             </h1>
             <p className="mt-8 text-lg leading-relaxed text-slate-600 md:text-xl">
-              Sendnova researches companies and generates thoughtful outbound
+              SendNova researches companies and generates thoughtful outbound
               emails based on real observations — so you reach out with context,
               not templates.
             </p>
@@ -150,7 +150,7 @@ export default function HomePage() {
 
             <p className="mt-10 text-sm text-slate-500">
               <ShieldCheck className="mr-1.5 inline-block h-4 w-4 align-text-bottom text-slate-400" />
-              Works with Gmail. Sendnova only requests permission to send emails
+              Works with Gmail. SendNova only requests permission to send emails
               — never to read your inbox.
             </p>
           </div>
@@ -158,7 +158,7 @@ export default function HomePage() {
           {/* Product screenshot */}
           <img
             src="/images/campaign-detail.png"
-            alt="Sendnova campaign workspace showing AI insights and generated outreach emails"
+            alt="SendNova campaign workspace showing AI insights and generated outreach emails"
             className="mx-auto mt-16 w-full max-w-[900px] rounded-xl border border-gray-200 shadow-2xl brightness-110"
           />
         </Container>
@@ -205,7 +205,7 @@ export default function HomePage() {
       {/* ───── How it Works ───── */}
       <Section id="how-it-works">
         <Container>
-          <SectionHeading title="How Sendnova works" />
+          <SectionHeading title="How SendNova works" />
           <div className="grid gap-8 md:grid-cols-3">
             {steps.map((item) => (
               <div
@@ -238,7 +238,7 @@ export default function HomePage() {
               Use Cases
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
-              Who Sendnova Is For
+              Who SendNova Is For
             </h2>
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-slate-600 md:text-xl">
               Small teams and founders who rely on thoughtful outreach instead of
@@ -270,8 +270,8 @@ export default function HomePage() {
       <Section id="gmail">
         <Container>
           <SectionHeading
-            title="How Sendnova works with Gmail"
-            subtitle="Sendnova connects to your Gmail account using Google's secure authorization system."
+            title="How SendNova works with Gmail"
+            subtitle="SendNova connects to your Gmail account using Google's secure authorization system."
           />
           <div className="mx-auto max-w-2xl">
             <div className="rounded-xl border border-blue-100/60 bg-white p-8 shadow-[0_8px_40px_rgba(37,99,235,0.06)] sm:p-10">
@@ -303,7 +303,7 @@ export default function HomePage() {
         <Container>
           <SectionHeading
             title="Join early access"
-            subtitle="Sendnova is currently in private beta. Join the waitlist to get early access when the platform opens."
+            subtitle="SendNova is currently in private beta. Join the waitlist to get early access when the platform opens."
           />
           <div className="mx-auto max-w-xl">
             <WaitlistForm />

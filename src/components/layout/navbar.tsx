@@ -24,7 +24,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center">
             <Image
               src="/sendnova-logo-trimmed.png"
-              alt="Sendnova"
+              alt="SendNova"
               width={253}
               height={56}
               priority

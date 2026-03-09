@@ -3,9 +3,9 @@ import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 
 export const metadata: Metadata = {
-  title: "Gmail Security — Sendnova",
+  title: "Gmail Security — SendNova",
   description:
-    "How Sendnova uses Gmail permissions securely and responsibly.",
+    "How SendNova uses Gmail permissions securely and responsibly.",
 };
 
 export default function GmailSecurityPage() {
@@ -14,34 +14,34 @@ export default function GmailSecurityPage() {
       <Container>
         <div className="mx-auto max-w-3xl">
           <h1 className="text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
-            How Sendnova Uses Gmail
+            How SendNova Uses Gmail
           </h1>
           <p className="mt-5 text-lg leading-relaxed text-slate-600">
-            Sendnova connects to Gmail using Google&apos;s secure OAuth
-            authorization system. This allows Sendnova to send outreach emails
+            SendNova connects to Gmail using Google&apos;s secure OAuth
+            authorization system. This allows SendNova to send outreach emails
             on your behalf while keeping your Google account secure.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-slate-600">
-            Sendnova is designed to help users send thoughtful, contextual
+            SendNova is designed to help users send thoughtful, contextual
             outreach &mdash; not mass spam campaigns.
           </p>
 
           <div className="mt-14 space-y-12 text-lg leading-relaxed text-slate-700 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-slate-900">
             <div>
-              <h2>What Permission Sendnova Requests</h2>
+              <h2>What Permission SendNova Requests</h2>
               <p className="mt-3">
-                When you connect your Gmail account, Sendnova requests permission
+                When you connect your Gmail account, SendNova requests permission
                 to:
               </p>
               <p className="mt-3 font-medium text-slate-900">
                 Send email on your behalf.
               </p>
               <p className="mt-3">
-                This allows Sendnova to deliver the outreach emails generated
-                inside the Sendnova campaign workspace.
+                This allows SendNova to deliver the outreach emails generated
+                inside the SendNova campaign workspace.
               </p>
               <p className="mt-3">
-                Sendnova uses the following Google OAuth scope:
+                SendNova uses the following Google OAuth scope:
               </p>
               <div className="mt-4 rounded-lg bg-slate-50 px-5 py-3">
                 <code className="text-sm text-slate-700">
@@ -49,18 +49,18 @@ export default function GmailSecurityPage() {
                 </code>
               </div>
               <p className="mt-4">
-                This permission allows Sendnova to send emails through your Gmail
+                This permission allows SendNova to send emails through your Gmail
                 account.
               </p>
             </div>
 
             <div>
-              <h2>What Sendnova Does NOT Access</h2>
+              <h2>What SendNova Does NOT Access</h2>
               <p className="mt-3">
-                Sendnova does not request permission to read your inbox or access
+                SendNova does not request permission to read your inbox or access
                 your Gmail data.
               </p>
-              <p className="mt-3">Sendnova does not:</p>
+              <p className="mt-3">SendNova does not:</p>
               <ul className="mt-3 list-disc space-y-2 pl-5">
                 <li>read your Gmail inbox</li>
                 <li>access your email history</li>
@@ -70,14 +70,14 @@ export default function GmailSecurityPage() {
                 <li>store your Gmail messages</li>
               </ul>
               <p className="mt-4">
-                Sendnova only sends the emails you approve in your campaign.
+                SendNova only sends the emails you approve in your campaign.
               </p>
             </div>
 
             <div>
-              <h2>How Sendnova Protects Your Data</h2>
+              <h2>How SendNova Protects Your Data</h2>
               <p className="mt-3">
-                Sendnova follows industry-standard security practices to protect
+                SendNova follows industry-standard security practices to protect
                 user data.
               </p>
               <p className="mt-3">These include:</p>
@@ -88,7 +88,7 @@ export default function GmailSecurityPage() {
                 <li>restricted access to Gmail permissions</li>
               </ul>
               <p className="mt-4">
-                Sendnova only requests the minimum permission required for the
+                SendNova only requests the minimum permission required for the
                 product to function.
               </p>
             </div>
@@ -99,14 +99,14 @@ export default function GmailSecurityPage() {
                 You remain fully in control of your Gmail connection.
               </p>
               <p className="mt-3">
-                You can disconnect Sendnova from your Google account at any time
+                You can disconnect SendNova from your Google account at any time
                 through:
               </p>
               <p className="mt-3 font-medium text-slate-900">
                 Google Account &rarr; Security &rarr; Third-Party Access
               </p>
               <p className="mt-3">
-                Once access is revoked, Sendnova can no longer send emails
+                Once access is revoked, SendNova can no longer send emails
                 through your account.
               </p>
             </div>
@@ -114,14 +114,14 @@ export default function GmailSecurityPage() {
             <div>
               <h2>Responsible Email Practices</h2>
               <p className="mt-3">
-                Sendnova is designed for small-batch, thoughtful outreach.
+                SendNova is designed for small-batch, thoughtful outreach.
               </p>
               <p className="mt-3">
                 The platform encourages responsible communication and discourages
                 bulk spam campaigns.
               </p>
               <p className="mt-3">
-                Typical Sendnova usage involves sending 20&ndash;500 contextual
+                Typical SendNova usage involves sending 20&ndash;500 contextual
                 emails per month, not mass automated outreach.
               </p>
             </div>
@@ -129,7 +129,7 @@ export default function GmailSecurityPage() {
             <div>
               <h2>Contact</h2>
               <p className="mt-3">
-                If you have questions about how Sendnova uses Gmail permissions,
+                If you have questions about how SendNova uses Gmail permissions,
                 contact:
               </p>
               <a

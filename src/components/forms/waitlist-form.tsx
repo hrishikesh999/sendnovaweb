@@ -82,7 +82,7 @@ export function WaitlistForm() {
           You&apos;re on the waitlist.
         </h3>
         <p className="mt-3 leading-relaxed text-slate-600">
-          Sendnova is currently in private beta. We&apos;ll invite early users
+          SendNova is currently in private beta. We&apos;ll invite early users
           in small batches to ensure a smooth experience.
         </p>
       </div>
