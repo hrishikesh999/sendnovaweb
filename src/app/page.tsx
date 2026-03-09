@@ -259,6 +259,12 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+          <p className="mx-auto mt-12 max-w-2xl text-center text-lg leading-relaxed text-slate-600">
+            SendNova is not built for mass unsolicited email campaigns. It is
+            designed for relevant, personalized outreach to initiate consulting
+            introductions, partnership exploration, recruiting conversations, and
+            so much more.
+          </p>
         </Container>
       </Section>
 
@@ -289,36 +295,6 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-            </div>
-          </div>
-        </Container>
-      </Section>
-
-      {/* ───── Responsible Outreach ───── */}
-      <Section className="bg-[#F6F8FF]">
-        <Container>
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
-              Built for thoughtful outreach
-            </h2>
-            <div className="mt-10 space-y-6 text-lg leading-relaxed text-slate-600">
-              <p>
-                SendNova is designed for relevant, personalized outreach.
-              </p>
-              <div className="flex flex-col items-center gap-2 py-2">
-                <p className="font-medium text-slate-800">
-                  Consulting introductions
-                </p>
-                <p className="font-medium text-slate-800">
-                  Partnership exploration
-                </p>
-                <p className="font-medium text-slate-800">
-                  Recruiting conversations
-                </p>
-              </div>
-              <p className="font-medium text-slate-900">
-                It is not designed for mass unsolicited email campaigns.
-              </p>
             </div>
           </div>
         </Container>
